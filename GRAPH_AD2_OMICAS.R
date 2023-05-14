@@ -97,7 +97,7 @@ system.time(
                                   #X=seq_len(5000),
                                   fun = function (i){ 
                                     #for(i in 1:2500){#nrow(edges)){
-                                    i <- 1
+                                    #i <- 1
                                     print(i)
                                     #utils::setTxtProgressBar(pb, i)
                                     
