@@ -85,7 +85,7 @@ filename = "/users/ccsosaa/pecanpy/BIG_COMP_W.emb"
 data = pd.read_csv(filename,header=None, delim_whitespace=True,index_col=0)
 
 #filename = "D:/TESIS_PHD/RICENETPPI/CANDIDATES_1.csv"
-filename = "/users/ccsosaa/pecanpy/CANDIDATES_1.csv"
+filename = "/users/ccsosaa/pecanpy/JJG_DEG/CANDIDATES_1.csv"
 candidates = pd.read_csv(filename,index_col=0,header=None)
 
 from pulearn import BaggingPuClassifier
@@ -96,11 +96,11 @@ from sklearn.linear_model import LogisticRegression
 # In[76]:
 
 
-X = data.iloc[1:400,:]
-y = candidates.iloc[1:400,:]
+#X = data.iloc[1:400,:]
+#y = candidates.iloc[1:400,:]
 
-#X = data
-#y = candidates.iloc[:,:]
+X = data
+y = candidates.iloc[:,:]
 
 #print(X)
 
@@ -348,7 +348,7 @@ fixed_met_df.columns =["AUC","AUCcr","ACCURACYcr","BALANCED ACCURACYcr","Fcr","M
 fixed_met_df['Algorithm'] = ['SVM', 'RF', 'LDA']
 
 #fixed_met_df.to_csv("D:/TESIS_PHD/RICENETPPI/fixed_metrics.csv")
-fixed_met_df.to_csv("/users/ccsosaa/pecanpy/out_pred.csv")
+fixed_met_df.to_csv("/users/ccsosaa/pecanpy/fixed_metrics_JJG.csv")
 
 # In[72]:
 
@@ -381,5 +381,5 @@ for i in range(len(results["pred_rf"])):
 # In[65]:
 
 #results.to_csv("D:/TESIS_PHD/RICENETPPI/out_pred.csv")
-results.to_csv("/users/ccsosaa/pecanpy/out_pred.csv")
+results.to_csv("/users/ccsosaa/pecanpy/out_pred_JJG.csv")
 
