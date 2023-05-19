@@ -33,7 +33,7 @@ candidates = pd.read_csv(filename,index_col=0,header=None)
 
 X = data
 y = candidates.iloc[:,:]
-
+y[y==0] = -1
 idx = y.index
 # #SCALING
 
@@ -50,7 +50,7 @@ X4 = X3
 X3_to = X3.loc[:, X2.columns!='X1']
 y3_to = X3.loc[:, X2.columns=='X1']
 
-X4 = X2[X2["X1"]==0]
+X4 = X2[X2["X1"]==-1]
 y4 = X4["X1"]
 X4 = X4.loc[:, X4.columns!='X1']
 
@@ -123,7 +123,7 @@ candidates = pd.read_csv(filename,index_col=0,header=None)
 
 X = data
 y = candidates.iloc[:,:]
-
+y[y==0] = -1
 idx = y.index
 # #SCALING
 
@@ -140,7 +140,7 @@ X4 = X3
 X3_to = X3.loc[:, X2.columns!='X1']
 y3_to = X3.loc[:, X2.columns=='X1']
 
-X4 = X2[X2["X1"]==0]
+X4 = X2[X2["X1"]==-1]
 y4 = X4["X1"]
 X4 = X4.loc[:, X4.columns!='X1']
 
