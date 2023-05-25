@@ -9,7 +9,7 @@ N/A,Shared genes (PULEARN node2vec + node2vec+),DEG (62 genes),N/A,61,60,1,N/A,N
 N/A,Shared genes (ADASAMPLING node2vec + node2vec+),DEG (62 genes),N/A,1143,23,1120,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
 N/A,Shared genes (node2vec + node2vec+),DEG (62 genes),N/A,77,59,18,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
 N/A,Shared genes (match of shared genes PULEARN + ADASAMPLING in node2vec and node2vec+),DEG (62 genes),N/A,22,22,0,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
-Node2vec (NO EDGE WEIGHTS),Average (PULEARN),GOCOMPARE (728  genes),ROC,1645,901,744,0.972646853,0.971355235,0.998763194,0.994965288,0.992745083,0.832319453,0.045090909,0.611762,0.973
+Node2vec (NO EDGE WEIGHTS),Average (PULEARN),GOCOMPARE (728  genes),ROC,1465,721,744,0.972646853,0.971355235,0.998763194,0.994965288,0.992745083,0.832319453,0.045090909,0.611762,0.973
 Node2vec (NO EDGE WEIGHTS),Average (ADASAMPLING),GOCOMPARE (728  genes),ROC,4752,496,4256,0.711689644,0.611473303,0.829079674,0.785272715,0.697553884,0.307978779,0.257939394,0.550387,0.712
 Node2vec (NO EDGE WEIGHTS),Average (PULEARN + ADASAMPLING),GOCOMPARE (728  genes),ROC,2530,690,1840,0.918143523,0.907869586,0.986644537,0.970625384,0.954867024,0.693589211,0.111515152,0.521705,0.918
 Node2vec+ (EDGE WEIGHTS),Average (PULEARN),GOCOMPARE (728  genes),ROC,973,724,249,0.989707293,0.989549586,0.999608993,0.997210653,0.996545506,0.888688341,0.015090909,0.65187,0.99
@@ -19,14 +19,3 @@ N/A,Shared genes (PULEARN node2vec + node2vec+),GOCOMPARE (728  genes),N/A,729,7
 N/A,Shared genes (ADASAMPLING node2vec + node2vec+),GOCOMPARE (728  genes),N/A,3107,431,2676,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
 N/A,Shared genes (node2vec + node2vec+),GOCOMPARE (728  genes),N/A,1033,672,361,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
 N/A,Shared genes (match of shared genes PULEARN + ADASAMPLING in node2vec and node2vec+),GOCOMPARE (728  genes),N/A,426,422,4,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
