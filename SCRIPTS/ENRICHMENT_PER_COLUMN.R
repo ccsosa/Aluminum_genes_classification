@@ -216,18 +216,21 @@ ENRICHMENT_CANDIDATES_FUNC_COL <- function(dir,filename,out_dir,out_name){
 
 
 
-  dir <- "D:/REPO_GITHUB/ALUMINUM_GENES_CLASSIFICATION/ENSEMBLE/GOCOMPARE"
-  out_dir <- dir
-  filename = "COMPARING APPROACHES.xlsx"
-  out_name <- "GO_GOCOMPARE_ALL"
-  
-
+ #  dir <- "D:/REPO_GITHUB/ALUMINUM_GENES_CLASSIFICATION/ENSEMBLE/GOCOMPARE"
+ #  out_dir <- dir
+ #  filename = "COMPARING APPROACHES.xlsx"
+ #  out_name <- "GO_GOCOMPARE_ALL"
+ #  
+ # 
+ # final_file <- ENRICHMENT_CANDIDATES_FUNC_COL(dir,filename,out_dir,out_name)
+ # 
+ 
+ 
+ dir <- "D:/REPO_GITHUB/ALUMINUM_GENES_CLASSIFICATION/ENSEMBLE/JJG"
+ out_dir <- dir
+ filename = "COMPARING APPROACHES.xlsx"
+ out_name <- "GO_GOCOMPARE_ALL"
+ 
+ 
  final_file <- ENRICHMENT_CANDIDATES_FUNC_COL(dir,filename,out_dir,out_name)
-# 
-# 
-# dir <- "D:/REPO_GITHUB/ALUMINUM_GENES_CLASSIFICATION/ENSEMBLE"
-# out_dir <- dir
-# filename = "CANDIDATES_GOCompare_ENSEMBLE_UNWEIGHTED.xlsx"
-# out_name <- "GO_UNWEIGHTED"
-# 
-# final_file2 <- ENRICHMENT_CANDIDATES_FUNC(dir,filename,out_dir,out_name)
+ 
