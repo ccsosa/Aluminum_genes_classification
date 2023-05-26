@@ -46,7 +46,7 @@ ENRICHMENT_CANDIDATES_FUNC_COL <- function(dir,filename,out_dir,out_name){
  
 
   
-
+if(length(candidates_gene_ids)>1){
   
   
   CH <- c("CANDIDATES")
@@ -196,9 +196,11 @@ ENRICHMENT_CANDIDATES_FUNC_COL <- function(dir,filename,out_dir,out_name){
   
   
   results_list[[j-1]] <- results
-  
-  
-  }
+} else {
+  results_list[[j-1]] <-NULL
+}
+    
+    }
   message("Saving results in a XLSX file")
   
 
