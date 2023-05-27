@@ -228,10 +228,18 @@ if(length(candidates_gene_ids)>1){
  # 
  
  
- dir <- "D:/REPO_GITHUB/ALUMINUM_GENES_CLASSIFICATION/ENSEMBLE/JJG"
+ # dir <- "D:/REPO_GITHUB/ALUMINUM_GENES_CLASSIFICATION/ENSEMBLE/JJG"
+ # out_dir <- dir
+ # filename = "COMPARING APPROACHES.xlsx"
+ # out_name <- "GO_GOCOMPARE_ALL"
+ # 
+ # 
+ # final_file <- ENRICHMENT_CANDIDATES_FUNC_COL(dir,filename,out_dir,out_name)
+ # 
+ dir <- "D:/REPO_GITHUB/ALUMINUM_GENES_CLASSIFICATION/ENSEMBLE/JJG_DEG_1"
  out_dir <- dir
  filename = "COMPARING APPROACHES.xlsx"
- out_name <- "GO_GOCOMPARE_ALL"
+ out_name <- "GO_GOCOMPARE_ALL_LFC1"
  
  
  final_file <- ENRICHMENT_CANDIDATES_FUNC_COL(dir,filename,out_dir,out_name)
