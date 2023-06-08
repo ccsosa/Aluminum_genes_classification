@@ -106,6 +106,8 @@ mat_num <- mat_num[which(rowSums(mat_num)>0),]
 #mat_num <- as.data.frame(t(mat_num))
 cols <- rev(hcl.colors(24, "Greens"))
 cols<- c("gray",cols)
+
+################################################################################
 p  <- pheatmap(mat_num,cluster_rows = F,
                cluster_cols = T,
                #clustering_distance_rows = "correlation",
@@ -129,3 +131,21 @@ save_pheatmap_pdf(x = p,
                   width = 12,
                   height = 60)
 
+################################################################################
+# mat_num2 <- mat_num#[mat_num==0] <- NA
+# mat_num2[mat_num2==0] <- NA
+
+x_p95 <- list()
+
+x_p95 <- lapply(1:ncol(mat_num2),function(i){
+  message(i)
+  x_i <- mat_num2[which(mat_num2[,i] > quantile(mat_num2[,i],probs = 0.95,na.rm = T)),]
+  if(nrow(x_i)>0){
+  x_i <- x_i[order(x_i[,i],decreasing = T),]
+  x_i <- data.frame(pathway=row.names(x_i),count=x_i[,i],dataset=colnames(x_i)[i])
+  return(x_i)
+  }
+  })
+
+x_p95 <- do.call(rbind,x_p95)
+write.csv(x_p95, paste0("D:/REPO_GITHUB/ALUMINUM_GENES_CLASSIFICATION/INPUTS","/","top95.csv"),na = "",row.names = F)
