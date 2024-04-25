@@ -1,4 +1,9 @@
 # Aluminum_genes_classification
+Research schema used: 
+
+![Code schema](https://raw.githubusercontent.com/ccsosa/Aluminum_genes_classification/master/DIAGRAM.png)
+
+
 
 - First use the interactome downloaded from Mishra et al., (2022) in edge list format
 - Add a count matrix and run the GRAPH_AD2_OMICAS.R script to add the correlations of log2(X+1) to the edges
